@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="/login/layout_style.css">
+    <link rel="icon" href="/book_icon.ico" type="image/x-icon">
+    <script src="/login/login.js"></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <a href="login.html"><img src="/icon/logo.png" alt="logo" class="logo"></a>
+
+            <div class="text-sci">
+                <h2>Welcome To<br>Beyond The Shelf</h2>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Login</h2>
+
+                    <div class="input-box">
+                        <input type="email" required id="email" name="email" placeholder="Enter your Email">
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" id="pass" name="pass" required placeholder="Enter your Password">
+                        <label>Password</label>
+                    </div>
+
+                    <div class="showpass">
+                        <label>
+                            <input type="checkbox" onclick="myFunction()">Show Password
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn" onclick="validation()">Login</button>
+
+                    <div class="login-register">
+                        <p>
+                            Don't have an account? 
+                            <a href="/register/register.html">Register</a>
+                        </p>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
