@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="event_form.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="icon" href="/book_icon.ico" type="image/x-icon">
+</head>
+<body style="background-color: #141132;">
+    <header>
+        <div class="nav_first_row">
+            <div class="btn">
+                <button class="menu-btn" style="background-color: transparent;border: none;">
+                    <img src="icon/menu.png" alt="menu" style="width: 30px;height: 30px;">
+                </button>
+            </div>
+            <a href="homepage.html"><img src="icon/logo.png" alt="logo" class="logo"></a>
+            <form action="/action_page.php" method="get" id="search" autocomplete="off" class="full">
+                <div class="sbar">
+                    <input type="text" name="search" id="sbox" required pattern="\S+">
+                    <label for="sbox" class="slabel">Search</label>
+                    <button type="submit" form="search" class="searchbutton" value="submit"><img src="icon/search.png" class="searchbar" alt="search"></button>
+                </div>
+            </form>
+            <div style="display: flex;">
+                <button class="button_icon full" id="account">
+                    <img src="icon/user_normal.png" width="20px" height="20px" alt="user_normal" id="account_img">
+                    <span class="icon_span">Log out</span>
+                </button>
+                <button class="shrink_button half" id="account2">
+                    <img src="icon/user_normal.png" width="20px" height="20px" alt="user_normal" id="account_img2">
+                </button>
+                <button class="button_icon full" id="cart">
+                    <img src="icon/cart_normal.png" width="20px" height="20px" alt="cart_normal" id="cart_img">
+                    <span class="icon_span">Cart</span>
+                </button>
+                <button class="shrink_button half" id="cart2" style="margin-left: 10px;">
+                    <img src="icon/cart_normal.png" width="20px" height="20px" alt="cart_normal" id="cart_img2">
+                </button>
+                <button class="button_icon full" id="fav">
+                    <img src="icon/wish_button_normal.png" width="20px" height="20px" alt="wish_button_normal" id="fav_img">
+                    <span class="icon_span">Wishlist</span>
+                </button>
+                <button class="shrink_button half" id="fav2" style="margin-left: 10px;">
+                    <img src="icon/wish_button_normal.png" width="20px" height="20px" alt="wish_button_normal" id="fav_img2">
+                </button>
+            </div>
+        </div>
+        
+        <nav class="nav_links">
+            <div class="menu">
+                <div class="btn">
+                    <button class="close-btn" style="background-color: transparent;border: none;">
+                        <img src="icon/cancel.png" alt="cancel" style="width: 30px;height: 30px;">
+                    </button>
+                </div>
+                <a href="allProducts.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Products</a>
+                <a href="promo.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Promotion</a>
+                <a href="event.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Event</a>
+                <a href="publishWithUs.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Publish with us</a>
+                <a href="about_us.html" class="underline_hover" style="font-size: 16px;font-family: arial;">About us</a>
+            </div>
+        </nav>
+        <div class="half" style="padding-bottom: 15px;">
+            <form action="/action_page2.php" method="get" id="search2" autocomplete="off">
+                <div class="sbar" style="margin: auto;">
+                    <input type="text" name="search2" id="sbox2" required pattern="\S+">
+                    <label for="sbox2" class="slabel">Search</label>
+                    <button type="submit" form="search2" class="searchbutton" value="submit"><img src="icon/search.png" class="searchbar" alt="search"></button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <div class="form" style="padding-top: 9rem;">
+        <div class="container">
+            <div class="box">
+                <h1 id="title">Event: BTS Creepy Puzzles & Spooky Coloring Challenge</h1>
+                <p style="padding-top: 16px;font-size: 16px;">Venue: BTS Mid Valley</p>
+                <p style="padding-top: 8px;font-size: 16px;">Date : 7 October (Saturday)</p>
+                <p style="padding-top: 8px;font-size: 16px;">Time: 11.00am - 12.00pm</p>
+            </div>
+    
+            <div class="box"> 
+                <h2 id="description">Description</h2>
+                <p style="font-size: 16px;">Join us for a thrilling Halloween adventure designed for kids! 
+                    Unravel mysteries with Halloween-themed puzzles, get crafty with origami by 
+                    making a spooky ghost, and showcase your coloring skills in our contest.</p>
+                <img src="event/creepy-puzzles.png" alt="Event Image" style="padding-top: 20px;padding-bottom: 10px;">
+            </div>
+    
+            <div class="box">
+                <form id="form" action="#">
+                    <div class="input-control">
+                        <label for="email" style="padding-top: 8px;">Email*</label>
+                        <input id="email" name="email" type="text">
+                        <div class="error" id="email-error"></div>
+                    </div>
+    
+                    <div class="input-control">
+                        <label for="Fname" style="padding-top: 8px;">Full Name*</label>
+                        <input id="Fname" name="Fname" type="text">
+                        <div class="error" id="fname-error"></div>
+                    </div>
+           
+                    <div class="input-control">
+                        <label style="padding-top: 8px;">How did you hear about this event?*</label>
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input id="social-media" type="radio" name="event" value="Social Media Post">
+                                <label for="social-media">Social Media Post</label>
+                            </div>
+                            <div class="radio-option">
+                                <input id="friend" type="radio" name="event" value="Friend">
+                                <label for="friend">Friend</label>
+                            </div>
+                            <div class="radio-option">
+                                <input id="in-store-poster" type="radio" name="event" value="In-store event poster">
+                                <label for="in-store-poster">In-store event poster</label>
+                            </div>
+                            <div class="radio-option">
+                                <input id="author-publisher-post" type="radio" name="event" value="Author/publisher social media post">
+                                <label for="author-publisher-post">Author/publisher social media post</label>
+                            </div>
+                        </div>
+                        <div class="error" id="event-error"></div>
+                    </div>
+           
+                    <div> 
+                        <label for="comments" class="coq">Comments or Questions</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>         
+    
+                    <div class="button-container">
+                        <input type="reset" id="reset">
+                        <input type="submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li><a href="/html/TermsAndServices.html">terms and services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="/html/customer_inquiry.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div>
+                        <button id="facebook" class="footer_button">
+                            <img src="icon/facebook_normal.png" width="40px" height="40px" alt="facebook" id="facebook_img">
+                        </button>
+                        <button id="twitter" class="footer_button">
+                            <img src="icon/twitter_normal.png" width="40px" height="40px" alt="twitter" id="twitter_img">
+                        </button>
+                        <button id="instagram" class="footer_button">
+                            <img src="icon/instagram_normal.png" width="40px" height="40px" alt="instagram" id="instagram_img">
+                        </button>
+                        <button id="linkedin" class="footer_button">
+                            <img src="icon/linkedin_normal.png" width="40px" height="40px" alt="linkedin" id="linkedin_img">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">Copyright &#169 2023 Beyond The Shelf</p>
+        </div>
+    </footer>
+    <aside id="wishlist" class="list">
+        <input type="image" id="close" class="cancel_button" src="icon/cancel.png">
+        <h2 style="text-align: center;text-decoration: underline;">My Wishlist</h2>
+        <div id="wishlistItem" style="width: 80%;margin: auto;">
+
+        </div>
+    </aside>
+    <script src="footer.js"></script>
+    <script src="nav.js"></script>
+    <script defer src="event_form.js"></script>
+</body>
+</html>

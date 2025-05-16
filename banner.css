@@ -1,0 +1,130 @@
+.banner{
+    height: 41vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 175px;
+}
+
+.slider{
+    width: 1120px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1120px;
+    height: 300px;
+}
+
+/* css for manual slide navigation */
+
+.navigation-manual{
+    position: absolute;
+    min-width: 1120px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* css for automatic navigation */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    min-width: 1120px;
+    justify-content: center;
+    margin-top: 260px;
+}
+
+.navigation-auto div{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+}
+
+@media only screen and (max-width:1250px){
+    .slider{
+        width: 90%;
+    }
+
+    .slide img{
+        width: 100%;
+    }
+
+    .navigation-auto{
+        min-width: 90%;
+    }
+
+    .navigation-manual{
+        min-width: 90%;
+    }
+}

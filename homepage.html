@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="displayproduct.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="icon" href="/book_icon.ico" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="nav_first_row">
+                <div class="btn">
+                    <button class="menu-btn" style="background-color: transparent;border: none;">
+                        <img src="icon/menu.png" alt="menu" style="width: 30px;height: 30px;">
+                    </button>
+                </div>
+                <a href="homepage.html"><img src="icon/logo.png" alt="logo" class="logo"></a>
+                <form action="/action_page.php" method="get" id="search" autocomplete="off" class="full">
+                    <div class="sbar">
+                        <input type="text" name="search" id="sbox" required pattern="\S+">
+                        <label for="sbox" class="slabel">Search</label>
+                        <button type="submit" form="search" class="searchbutton" value="submit"><img src="icon/search.png" class="searchbar" alt="search"></button>
+                    </div>
+                </form>
+                <div style="display: flex;">
+                    <button class="button_icon full" id="account">
+                        <img src="icon/user_normal.png" width="20px" height="20px" alt="user_normal" id="account_img">
+                        <span class="icon_span">Log out</span>
+                    </button>
+                    <button class="shrink_button half" id="account2">
+                        <img src="icon/user_normal.png" width="20px" height="20px" alt="user_normal" id="account_img2">
+                    </button>
+                    <button class="button_icon full" id="cart">
+                        <img src="icon/cart_normal.png" width="20px" height="20px" alt="cart_normal" id="cart_img">
+                        <span class="icon_span">Cart</span>
+                    </button>
+                    <button class="shrink_button half" id="cart2" style="margin-left: 10px;">
+                        <img src="icon/cart_normal.png" width="20px" height="20px" alt="cart_normal" id="cart_img2">
+                    </button>
+                    <button class="button_icon full" id="fav">
+                        <img src="icon/wish_button_normal.png" width="20px" height="20px" alt="wish_button_normal" id="fav_img">
+                        <span class="icon_span">Wishlist</span>
+                    </button>
+                    <button class="shrink_button half" id="fav2" style="margin-left: 10px;">
+                        <img src="icon/wish_button_normal.png" width="20px" height="20px" alt="wish_button_normal" id="fav_img2">
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="nav_links">
+                <div class="menu">
+                    <div class="btn">
+                        <button class="close-btn" style="background-color: transparent;border: none;">
+                            <img src="icon/cancel.png" alt="cancel" style="width: 30px;height: 30px;">
+                        </button>
+                    </div>
+                    <a href="allProducts.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Products</a>
+                    <a href="promo.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Promotion</a>
+                    <a href="event.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Event</a>
+                    <a href="publishWithUs.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Publish with us</a>
+                    <a href="about_us.html" class="underline_hover" style="font-size: 16px;font-family: arial;">About us</a>
+                </div>
+            </nav>
+            <div class="half" style="padding-bottom: 15px;">
+                <form action="/action_page2.php" method="get" id="search2" autocomplete="off">
+                    <div class="sbar" style="margin: auto;">
+                        <input type="text" name="search2" id="sbox2" required pattern="\S+">
+                        <label for="sbox2" class="slabel">Search</label>
+                        <button type="submit" form="search2" class="searchbutton" value="submit"><img src="icon/search.png" class="searchbar" alt="search"></button>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                  
+                    <div class="slide first">
+                        <a href="promo.html"><img src="banner/banner2.jpeg" alt="banner1"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="promo.html"><img src="banner/banner3.jpeg" alt="banner2"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="promo.html"><img src="banner/banner1.jpeg" alt="banner3"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="event.html"><img src="event/creepy-puzzles.png" alt="banner4"></a>
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 1rem;">
+            <div class="shelf_header">
+                <h2>Promotion</h2>
+                <a href="promo.html" style="margin-top: 5px;" class="underline_hover for_textlink">View all products</a>
+            </div>
+            <div class="shelf" style="margin-top: 1rem;">
+                <div class="product1">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/immortal-longings-us -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="1" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="1" class="cancel_wish">
+                            </div>
+                            <a href="/product/product1.html"><img src="/images/product1.jpg" alt="product1"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product1.html" class="for_anchor"><h3 style="margin-top: 5px;">Tell Me No lies</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Andrea Contos</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM59.90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product2">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/bookiut-ev-the-undead-city-2023 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="2" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="2" class="cancel_wish">
+                            </div>
+                            <a href="/product/product2.html"><img src="/images/product2.jpg" alt="product2"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product2.html" class="for_anchor"><h3 style="margin-top: 5px;">Even If We Break</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Sourcebooks, Inc</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM51.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product3">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/i-want-to-die-but-i-want-to-eat-tteokbokki-1 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="3" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="3" class="cancel_wish">
+                            </div>
+                            <a href="/product/product3.html"><img src="images/product3.jpg" alt="product3"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product3.html" class="for_anchor"><h3 style="margin-top: 5px;">That Weekend</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Kara Thomas</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM56.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product4">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/bookiut-ev-school-of-thieves-2023 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="4" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="4" class="cancel_wish">
+                            </div>
+                            <a href="/product/product4.html"><img src="/images/product4.jpg" alt="product4"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product4.html" class="for_anchor"><h3 style="margin-top: 5px;">Influence</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Sara Shepard</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM51.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product5">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/bookiut-ev-school-of-thieves-2023 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="5" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="5" class="cancel_wish">
+                            </div>
+                            <a href="/product/product5.html"><img src="/images/product5.jpg" alt="product5"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product5.html" class="for_anchor"><h3 style="margin-top: 5px;">We Are Not Free</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Traci Chee</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM54.95</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 1rem;">
+            <div class="shelf_header">
+                <h2>Products</h2>
+                <a href="allProducts.html" style="margin-top: 5px;" class="underline_hover for_textlink">View all products</a>
+            </div>
+            <div class="shelf" style="margin-top: 1rem;">
+                <div class="product6">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/immortal-longings-us -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="6" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="6" class="cancel_wish">
+                            </div>
+                            <a href="/product/product6.html"><img src="/images/product6.jpg" alt="product6"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product6.html" class="for_anchor"><h3 style="margin-top: 5px;">See You Yesterday</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Solomon, Rachel Lynn</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM65.90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product7">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/bookiut-ev-the-undead-city-2023 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="7" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="7" class="cancel_wish">
+                            </div>
+                            <a href="/product/product7.html"><img src="/images/product7.jpeg" alt="product7"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product7.html" class="for_anchor"><h3 style="margin-top: 5px;">Mirror Me</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Andrea Contos</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM94.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product8">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/i-want-to-die-but-i-want-to-eat-tteokbokki-1 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="8" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="8" class="cancel_wish">
+                            </div>
+                            <a href="/product/product8.html"><img src="/images/product8.jpeg" alt="product8"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product8.html" class="for_anchor"><h3 style="margin-top: 5px;">Where the Light Goes</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Barnard, Sara</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM55.90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product9">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/bookiut-ev-school-of-thieves-2023 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="9" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="9" class="cancel_wish">
+                            </div>
+                            <a href="/product/product9.html"><img src="/images/product9.jpeg" alt="product9"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product9.html" class="for_anchor"><h3 style="margin-top: 5px;">Where You Need To Be</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Coombs, Amelia Diane</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM65.90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product10">
+                    <div class="book">
+                        <!-- https://mphonline.com/collections/new-arrivals-manual/products/bookiut-ev-school-of-thieves-2023 -->
+                        <div style="position: relative;">
+                            <div class="no_wish">
+                                <input type="image" alt="wish_normal" src="icon/wish_normal.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="10" class="wish">
+                            </div>
+                            <div class="yes_wish none">
+                                <input type="image" alt="wish_hover" src="icon/wish_hover.png"style="position: absolute;margin-top: 15px;display: block;width: 30px;height: 30px;background-color: white;border-radius: 0 5px 5px 0;" id="10" class="cancel_wish">
+                            </div>
+                            <a href="/product/product10.html"><img src="/images/product10.jpg" alt="product10"></a>
+                        </div>
+                        <div>
+                            <a href="/product/product10.html" class="for_anchor"><h3 style="margin-top: 5px;">Friends Like These</h3></a>
+                            <p style="color: rgb(68, 66, 66);" class="for_text">by Rosoff, Meg</p>
+                            <p style="margin-top: 2px;color: green;padding-bottom: 5px;" class="for_text">RM59.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="shelf_header">
+                <h2>Events</h2>
+                <a href="event.html" style="margin-top: 5px;" class="underline_hover for_textlink">View all events</a>
+            </div>
+            <div class="event_container">    
+                <div class="event">
+                    <a href="event.html"><img src="event/creepy-puzzles.png" alt="event"></a>
+                </div>
+            </div>
+        </div>
+      
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about_us.html">about us</a></li>
+                            <li><a href="/html/TermsAndServices.html">terms and services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="/html/customer_inquiry.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Achievements</h4>
+                        <ul>
+                            <li><a href="awards.html">Awards</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div>
+                            <button id="facebook" class="footer_button">
+                                <img src="icon/facebook_normal.png" width="40px" height="40px" alt="facebook" id="facebook_img">
+                            </button>
+                            <button id="twitter" class="footer_button">
+                                <img src="icon/twitter_normal.png" width="40px" height="40px" alt="twitter" id="twitter_img">
+                            </button>
+                            <button id="instagram" class="footer_button">
+                                <img src="icon/instagram_normal.png" width="40px" height="40px" alt="instagram" id="instagram_img">
+                            </button>
+                            <button id="linkedin" class="footer_button">
+                                <img src="icon/linkedin_normal.png" width="40px" height="40px" alt="linkedin" id="linkedin_img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="copyright">Copyright &#169 2023 Beyond The Shelf</p>
+            </div>
+        </footer>
+    </div>
+    <aside id="wishlist" class="list">
+        <input type="image" id="close" class="cancel_button" src="icon/cancel.png">
+        <h2 style="text-align: center;text-decoration: underline;">My Wishlist</h2>
+        <div id="wishlistItem" style="width: 80%;margin: auto;">
+
+        </div>
+    </aside>
+    <script src="footer.js"></script>
+    <script src="nav.js"></script>
+    <script src="banner.js"></script>
+</body>
+</html>

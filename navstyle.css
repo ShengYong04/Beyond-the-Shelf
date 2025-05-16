@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+  max-width: 100vh;
+}
+
+.button_icon{
+  margin-right: 16px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 13px 3px 13px;
+  background-color: white;
+}
+
+.shrink_button{
+  border-radius: 50%;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.shrink_button img{
+  border-radius: 50%;
+}
+
+.button_icon:hover{
+  color: red;
+  transition: 0.3s;
+}
+
+.icon_span{
+  padding-left: 6px;
+  position: relative;
+  top: -4px;
+  font-size: 16px;
+  font-family: arial;
+}
+
+.special_icon{
+  margin-right: 16px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 13px 10px 13px;
+}
+
+.special_icon_pad{
+  padding-right: 15px;
+}
+
+header{
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1850px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px #d2d2d2 solid;
+}
+
+header .menu a{
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3;
+}
+
+.underline_hover {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.underline_hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.underline_hover:hover::after {
+  transform: scaleX(1);
+}
+  
+header .btn{
+  cursor: pointer;
+  display: none;
+}
+
+.nav_first_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px 0 100px;
+}
+
+.half{
+  display: none;
+}
+
+.nav_links{
+  display: flex;
+  padding:16px 100px 20px 110px;
+}
+
+.logo{
+  margin-left: 3rem;
+  width: 140px;
+  height: 70px;
+}
+
+@media only screen and (max-width:1350px){
+  .logo{
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1060px){
+  .nav_links{
+    padding: 16px 100px 0 110px;
+  }
+
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: white;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: left;
+    border-right: 2px #827676 solid;
+  }
+
+  header .menu.active{
+    left: 0;
+    z-index: 999;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+
+  .full{
+    display: none;
+  }
+
+  .half{
+    display: block !important;
+  }
+
+  .nav_first_row{
+    padding: 20px 27px 0 27px;
+  }
+}

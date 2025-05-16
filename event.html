@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="icon" href="/book_icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav_first_row">
+            <div class="btn">
+                <button class="menu-btn" style="background-color: transparent;border: none;">
+                    <img src="icon/menu.png" alt="menu" style="width: 30px;height: 30px;">
+                </button>
+            </div>
+            <a href="homepage.html"><img src="icon/logo.png" alt="logo" class="logo"></a>
+            <form action="/action_page.php" method="get" id="search" autocomplete="off" class="full">
+                <div class="sbar">
+                    <input type="text" name="search" id="sbox" required pattern="\S+">
+                    <label for="sbox" class="slabel">Search</label>
+                    <button type="submit" form="search" class="searchbutton" value="submit"><img src="icon/search.png" class="searchbar" alt="search"></button>
+                </div>
+            </form>
+            <div style="display: flex;">
+                <button class="button_icon full" id="account">
+                    <img src="icon/user_normal.png" width="20px" height="20px" alt="user_normal" id="account_img">
+                    <span class="icon_span">Log out</span>
+                </button>
+                <button class="shrink_button half" id="account2">
+                    <img src="icon/user_normal.png" width="20px" height="20px" alt="user_normal" id="account_img2">
+                </button>
+                <button class="button_icon full" id="cart">
+                    <img src="icon/cart_normal.png" width="20px" height="20px" alt="cart_normal" id="cart_img">
+                    <span class="icon_span">Cart</span>
+                </button>
+                <button class="shrink_button half" id="cart2" style="margin-left: 10px;">
+                    <img src="icon/cart_normal.png" width="20px" height="20px" alt="cart_normal" id="cart_img2">
+                </button>
+                <button class="button_icon full" id="fav">
+                    <img src="icon/wish_button_normal.png" width="20px" height="20px" alt="wish_button_normal" id="fav_img">
+                    <span class="icon_span">Wishlist</span>
+                </button>
+                <button class="shrink_button half" id="fav2" style="margin-left: 10px;">
+                    <img src="icon/wish_button_normal.png" width="20px" height="20px" alt="wish_button_normal" id="fav_img2">
+                </button>
+            </div>
+        </div>
+        
+        <nav class="nav_links">
+            <div class="menu">
+                <div class="btn">
+                    <button class="close-btn" style="background-color: transparent;border: none;">
+                        <img src="icon/cancel.png" alt="cancel" style="width: 30px;height: 30px;">
+                    </button>
+                </div>
+                <a href="allProducts.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Products</a>
+                <a href="promo.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Promotion</a>
+                <a href="event.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Event</a>
+                <a href="publishWithUs.html" class="underline_hover" style="font-size: 16px;font-family: arial;">Publish with us</a>
+                <a href="about_us.html" class="underline_hover" style="font-size: 16px;font-family: arial;">About us</a>
+            </div>
+        </nav>
+        <div class="half" style="padding-bottom: 15px;">
+            <form action="/action_page2.php" method="get" id="search2" autocomplete="off">
+                <div class="sbar" style="margin: auto;">
+                    <input type="text" name="search2" id="sbox2" required pattern="\S+">
+                    <label for="sbox2" class="slabel">Search</label>
+                    <button type="submit" form="search2" class="searchbutton" value="submit"><img src="icon/search.png" class="searchbar" alt="search"></button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <h1 class="event_heading">Events</h1>
+    <h2 class="event_subheading">Upcoming Events</h2>
+    <div class="event_container">
+        <div class="event">
+            <div class="creepy">
+                <div class="event_title">
+                    <p class="month">OCT</p>
+                    <p class="date">7</p>
+                </div>
+                <a href="event_introduction_creepy.html"><img src="event/creepy-puzzles.png" alt="event1"></a>
+                <div class="description_box">
+                    <div class="description">
+                        <a href="event_introduction_creepy.html"><h3 style="font-family: arial;">Creepy Puzzles & Spooky Coloring Challenge</h3></a>
+                        <div class="description_padding">
+                            <div class="flex_container">
+                                <div class="detail creepy_detail">
+                                    <img src="icon/white_clock.png" alt="time" style="width: 18px;height: 18px;margin-left: 6px;">
+                                    <p style="padding-left: 5px;" class="event_text">11:00 AM - 12:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex_container">
+                                <div class="detail creepy_detail">
+                                    <img src="icon/white_location.png" alt="time" style="width: 16px;height: 18px;margin-left: 6px;">
+                                    <p class="detail_special_padding" class="event_text">BTS Mid Valley</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="event_form_creepy.html" class="event_text description_link creepy_link">REGISTER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="event adjust_space">
+            <div class="dano">
+                <div class="event_title">
+                    <p class="month">OCT</p>
+                    <p class="date">7</p>
+                </div>
+                <a href="event_introduction_dano.html"><img src="event/Dano_Chow.png" alt="event2"></a>
+                <div class="description_box">
+                    <div class="description">
+                        <a href="event_introduction_dano.html"><h3 style="font-family: arial;">Book Talk with the Dano Chow</h3></a>
+                        <div class="description_padding">
+                            <div class="flex_container">
+                                <div class="detail dano_detail">
+                                    <img src="icon/white_clock.png" alt="time" style="width: 18px;height: 18px;margin-left: 6px;">
+                                    <p style="padding-left: 5px;" class="event_text">02:00 AM - 03:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex_container">
+                                <div class="detail dano_detail">
+                                    <img src="icon/white_location.png" alt="time" style="width: 16px;height: 18px;margin-left: 6px;">
+                                    <p class="detail_special_padding" class="event_text">BTS Mid Valley</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="event_form_dano.html" class="event_text description_link dano_link">REGISTER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="event_subheading">Past Events</h2>
+
+    <div class="event_container">
+        <div class="event">
+            <div class="puteri">
+                <div class="event_title">
+                    <p class="month">SEP</p>
+                    <p class="date">24</p>
+                </div>
+                <a href="event_introduction_puteri.html"><img src="event/puteri.png" alt="event3"></a>
+                <div class="description_box">
+                    <div class="description">
+                        <a href="event_introduction_puteri.html"><h3 style="font-family: arial;">Sesi Bertemu Puteri Sarah Liyana</h3></a>
+                        <div class="description_padding">
+                            <div class="flex_container">
+                                <div class="detail puteri_detail">
+                                    <img src="icon/black_clock.png" alt="time" style="width: 18px;height: 18px;margin-left: 6px;">
+                                    <p style="padding-left: 5px;" class="event_text">02:00 PM - 04:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex_container">
+                                <div class="detail puteri_detail">
+                                    <img src="icon/black_location.png" alt="time" style="width: 16px;height: 18px;margin-left: 6px;">
+                                    <p class="detail_special_padding" class="event_text">BTS NU SENTRAL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="event adjust_space">
+            <div class="saras">
+                <div class="event_title">
+                    <p class="month">SEP</p>
+                    <p class="date">16</p>
+                </div>
+                <a href="event_introduction_saras.html"><img src="event/saras.png" alt="event4"></a>
+                <div class="description_box">
+                    <div class="description">
+                        <a href="event_introduction_saras.html"><h3 style="font-family: arial;">Meet & Greet with the Saras Manickam</h3></a>
+                        <div class="description_padding">
+                            <div class="flex_container">
+                                <div class="detail saras_detail">
+                                    <img src="icon/black_clock.png" alt="time" style="width: 18px;height: 18px;margin-left: 6px;">
+                                    <p style="padding-left: 5px;" class="event_text">02:00 PM - 03:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex_container">
+                                <div class="detail saras_detail">
+                                    <img src="icon/black_location.png" alt="time" style="width: 16px;height: 18px;margin-left: 6px;">
+                                    <p class="detail_special_padding" class="event_text">BTS Mid Valley</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="event no_adjustment">
+            <div class="dogman">
+                <div class="event_title">
+                    <p class="month">AUG</p>
+                    <p class="date">26</p>
+                </div>
+                <a href="event_introduction_dogman.html"><img src="event/Dogman-Activity-coloring-contest.jpg" alt="event5"></a>
+                <div class="description_box">
+                    <div class="description">
+                        <a href="event_introduction_dogman.html"><h3 style="font-family: arial;">Dog Man Activities and Colouring Contest</h3></a>
+                        <div class="description_padding">
+                            <div class="flex_container">
+                                <div class="detail dogman_detail">
+                                    <img src="icon/white_clock.png" alt="time" style="width: 18px;height: 18px;margin-left: 6px;">
+                                    <p style="padding-left: 5px;" class="event_text">11:00 AM - 01:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex_container">
+                                <div class="detail dogman_detail">
+                                    <img src="icon/white_location.png" alt="time" style="width: 16px;height: 18px;margin-left: 6px;">
+                                    <p class="detail_special_padding" class="event_text">BTS Mid Valley</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="event_container yes_adjustment">
+        <div class="event">
+            <div class="dogman">
+                <div class="event_title">
+                    <p class="month">AUG</p>
+                    <p class="date">26</p>
+                </div>
+                <a href="event_introduction_dogman.html"><img src="event/Dogman-Activity-coloring-contest.jpg" alt="event6"></a>
+                <div class="description_box">
+                    <div class="description">
+                        <a href="event_introduction_dogman.html"><h3 style="font-family: arial;">Dog Man Activities and Colouring Contest</h3></a>
+                        <div class="description_padding">
+                            <div class="flex_container">
+                                <div class="detail dogman_detail">
+                                    <img src="icon/white_clock.png" alt="time" style="width: 18px;height: 18px;margin-left: 6px;">
+                                    <p style="padding-left: 5px;" class="event_text">11:00 AM - 01:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex_container">
+                                <div class="detail dogman_detail">
+                                    <img src="icon/white_location.png" alt="time" style="width: 16px;height: 18px;margin-left: 6px;">
+                                    <p class="detail_special_padding" class="event_text">BTS Mid Valley</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li><a href="/html/TermsAndServices.html">terms and services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="/html/customer_inquiry.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div>
+                        <button id="facebook" class="footer_button">
+                            <img src="icon/facebook_normal.png" width="40px" height="40px" alt="facebook" id="facebook_img">
+                        </button>
+                        <button id="twitter" class="footer_button">
+                            <img src="icon/twitter_normal.png" width="40px" height="40px" alt="twitter" id="twitter_img">
+                        </button>
+                        <button id="instagram" class="footer_button">
+                            <img src="icon/instagram_normal.png" width="40px" height="40px" alt="instagram" id="instagram_img">
+                        </button>
+                        <button id="linkedin" class="footer_button">
+                            <img src="icon/linkedin_normal.png" width="40px" height="40px" alt="linkedin" id="linkedin_img">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">Copyright &#169 2023 Beyond The Shelf</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get all the flex items
+        const flexItems = document.querySelectorAll('detail');
+
+        // Loop through the items and set their widths based on content length
+        flexItems.forEach(item => {
+        item.style.width = `${item.scrollWidth}px`; // This will set the width equal to the content width
+        });
+    </script>
+    <script src="footer.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

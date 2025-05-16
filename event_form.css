@@ -1,0 +1,159 @@
+/* Center the content vertically and horizontally */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    font-family: Arial;
+    background-color: #141132;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styles */
+.form .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40%;
+    min-width: 500px;
+    padding: 20px;
+    background-color: orange;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+/* Box styles */
+.form .box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Event title styles */
+.form #title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Description word styles */
+.form #description {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Input field label styles */
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input field styles */
+.form input[type="text"], .form input[type="email"], .form textarea {
+    width: 97.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Images styles */
+.form img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* styles for radio button */
+/* Add some margin between radio options and error message */
+.input-control .radio-options {
+    margin-top: 5px; 
+}
+
+.input-control .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.input-control .radio-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Styles for submit button */
+.form #reset {
+    width: 45%;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.form #submit {
+    margin-left: 25px;
+    width: 45%;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.form #submit:hover, .form #reset:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+
+/*Styles for Comments or Questions */
+.coq {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+/* Show the error message styles */
+.input-control .error {
+    font-size: 14px;
+    color: red; 
+    margin-top: 5px;
+    display: none; 
+    margin-bottom: 10px;
+}
+
+/* Show the error message when needed */
+.input-control.error .error {
+    display: block;
+}
+
+/*  Styles to show the error message */
+.input-control .radio-option > .error {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;  
+    display: none;
+} 
+
+.input-control .radio-option label {
+    margin-top: 10px;
+}
+
+.button-container{
+    padding: 8px 0;
+}

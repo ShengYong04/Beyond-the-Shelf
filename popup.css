@@ -1,0 +1,122 @@
+.popup img{
+    width: 47rem;
+    height: 29.5rem;
+}
+
+.popup_container{
+    width: 100%;
+    height: 100%;
+    padding-top: 13rem;
+    padding-bottom: 3rem;
+}
+
+.popup{
+    width: 47rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.popup_close{
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+.popup h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+.popup_text_container{
+    width: 77%;
+    margin: auto;
+    padding-top: 18px;
+    line-height: 1.5;
+    font-size: 1.15rem;
+}
+
+.popup_detail{
+    display: flex;
+    width: 77%;
+    margin: auto;
+}
+
+.detail_flex_container{
+    display: flex;
+    width: 50%;
+    min-width: 289px;
+}
+
+.popup_detail .detail_flex_container .icon{
+    padding: 22px 10px 15px 0;
+    width: 25px;
+    height: 50px;
+}
+
+.popup_detail .detail_flex_container .icon2{
+    padding: 22px 10px 15px 0;
+    width: 20px;
+    height: 50px;
+}
+
+.popup_detail .detail_flex_container p{
+    padding-top: 20px;
+}
+
+.popup_detail > div >  p{
+    font-size: 1.1rem;
+}
+
+.popup_detail > div >  p:not(:first-child){
+    padding-top: 3px;
+}
+
+.popup a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.popup a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.popup_link{
+    width: 77%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 11px 0;
+}
+
+.share_detail{
+    width:49%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.share_title{
+    width: 77%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+}
+
+.share_title h3{
+    padding-left: 5px;
+    font-size: 1.3rem;
+}
+
+.popup_text{
+    font-size: 16px;
+    font-family: arial;
+}

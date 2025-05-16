@@ -1,0 +1,51 @@
+.list{
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+    overflow: scroll;
+    border-left: 2px #827676 solid;
+}
+
+.list.click{
+    right: 0;
+}
+
+.wish_product{
+    margin-top: 25px;
+    width: 200%;
+    max-width: 225px;
+}
+
+.none{
+    display: none!important;
+}
+
+.cancel_button{
+    position: absolute;
+    top: 0;
+    margin-top: 35px;
+    left: 0;
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 1024px){
+    .list{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .list{
+        width: 70%;
+    }
+}

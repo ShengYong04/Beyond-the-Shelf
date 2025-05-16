@@ -1,0 +1,80 @@
+body{
+	min-width: 80rem;
+	background: white;
+}
+.banner{
+	margin-top: 7.2rem;
+	display: grid;
+	color: black;
+    font-family: "Times New Roman", Times, serif;
+	justify-content: center;
+	padding-bottom: 6rem;
+}
+.title{
+	width: fit-content;
+	height: fit-content;
+	margin-top: 12rem;
+    display: inline-flex;
+	justify-self: center;
+	justify-items: center;
+	align-items: center;
+	font-size:calc(3rem + 2vw);
+	letter-spacing: 0.2rem;
+}
+.banner > article{
+	height: fit-content;
+	width: 52.5vw;
+	min-width: 37.8rem;
+	justify-self: center;
+	display: inline-block;
+
+	margin: 0wv 20vw 5vw 20vw;
+	padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+	font-size:calc(1rem + 0.5vw);
+	letter-spacing: 0.05rem;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+}
+.banner > table {
+	line-height: 2.5rem;
+	border-collapse: separate;
+	border-spacing: 4rem 2.5rem;
+	width: fit-content;
+}
+tr > td{
+	background-color: white;
+	border: 1px solid black;
+	font-size: 0.82rem;
+	border-radius: 50px;
+	float: none;
+}
+tr > th{
+	background-color: yellow;
+	border: 1px solid black;
+	font-size: 0.82rem;
+	border-radius: 50px;
+	float: none;
+}
+td > img{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+}
+.middle{
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(rgb(53, 39, 255),rgb(45, 45, 255),rgb(33, 29, 249));
+	padding: 5rem;
+}
+.middle > h1{transform: translate(-200px, 90px);
+color: aliceblue;
+text-shadow: 0 0 5px black;}
+.bottom{
+	height: 300px;
+	display: flex;
+	justify-content: center;;
+	padding: 5rem;
+	font-size: 2vw;
+	text-align: center;
+}
