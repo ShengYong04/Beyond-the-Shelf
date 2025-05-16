@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="silhouette">
+        <div class="container">
+            <h1>Payment</h1>
+            <form action="https://w3schools.com/action_page.php" onsubmit="return validateForm()">
+                <div class="form-group1">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group2">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                </div>
+                <div class="form-group3">
+                    <label for="message">Remarks</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Add your remarks"></textarea>
+                </div>
+                <div>
+                    <h3>Delivery Method:</h3>
+                </div>
+                <div class="form-group4">
+                    <input type="radio" id="shipment" name="shipment" value="1" checked>
+                    <label for="shipment">Shipment</label>
+                </div><br>
+                <div class="address">
+                    <h3>Delivery Information:</h3>
+                    <input class="input" type="text" id="company" name="company" placeholder="Company (optional)">
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="0123456789" required pattern="^(\+?6?01)[02-46-9]-*[0-9]{7}$|^(\+?6?01)[1]-*[0-9]{8}$">
+                    <input class="input" type="text" id="address" name="address" placeholder="Address" required>
+                    <input class="input" type="text" id="apartment-suite" name="apartment-suite" placeholder="Apartment, suite, etc. (optional)">
+                    <input class="input" type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+                    <input class="input" type="text" id="city" name="city" placeholder="City" required>
+                    <input class="input" type="text" id="state-territory" name="state-territory" placeholder="State/Territory" required>
+                </div>              
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="reset">Clear</button>
+            </form>
+        </div>
+    </div>
+        
+    <div class="line"></div>
+    <div class="productDetails">
+        <img src="../pics/No_Img.jpg" alt="Sample Image" title="Sample Image">
+        <br><br>
+        <p id="text1"><div id="detail1">Product Name: </div></p>
+        <br>
+        <p id="text2"><div id="detail2">Price: </div></p>
+        <br>
+        <p id="text3"><div id="detail3">Description: </div></p>
+        <br><br><br>
+        <p id="text4"><div id="detail4">Author: </div></p>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+@font-face{
+    font-family: "CroissantOne";
+    src:url("CroissantOne-Regular.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "Pacifico";
+    src:url("Pacifico-Regular.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "Lobster";
+    src:url("LobsterTwo-Regular.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "RobotoCondensed";
+    src:url("RobotoCondensed-Regular.ttf") format("TrueType");
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+h3{
+    font-family: "CroissantOne";
+    font-size: 24px;
+}
+
+body, html{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.bg{
+    background-image: url("../pics/background-book-bookcase-books\(UpPhoto\)\(noise_scale\)\(Level3\)\(tta\)\(x2.500000\).png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;    
+    background-position: 100% 100%;
+    filter: blur(7px);
+    background-color: rgba(57,255,255,0.4);
+    background-blend-mode: luminosity;
+    opacity: 0.3;
+}
+
+.silhouette{
+    position: absolute;
+    background-size: cover;
+    transform: translate(0,-110%);
+    padding: 0 20% 0 20% ;
+}
+
+.mycontainer form {
+    z-index: 5;
+    margin: auto;
+    padding: auto;
+    width: 60%;
+}
+
+.mycontainer form div{
+    padding: 15px;
+}
+
+.mycontainer h1{
+    padding-left: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "CroissantOne";
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+  
+label {
+    font-weight: bold;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px 0px 10px 0px;
+    resize: none;
+    transition: 1s
+}
+  
+textarea {
+    height: 100px;
+}
+  
+.productDetails button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit, #reset{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;    
+}
+  
+button:hover, #submit:hover, #reset:hover{
+    color: yellow;
+}
+
+button:active{
+    color: red;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+  
+.radio {
+    margin-bottom: 10px;
+}
+
+.address{
+    margin: auto;
+    padding: auto;
+}
+
+.address input{
+    margin: 5px;
+}
+
+h3{
+    font-size: larger;
+}
+  
+#postcode, #city, #state-territory{
+    width: 25%;
+}
+
+#company, #phone{
+    width: 45%;
+}
+
+.form-group4 {
+    display: flex;
+    text-align: center;
+    float: left;
+}
+
+.form-group4 label{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+button{
+    transition: transform 1s, opacity 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+button:active{
+    transform: scale(0.8,0.8);
+}
+
+img{
+    transition: transform 1s;
+}
+
+img:hover{
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
+}
+
+input:focus, select:focus, textarea:focus{
+    background-color: rgb(255,255,188);
+}
+
+input:active, select:active, textarea:active{
+    transform: scale(0.9,0.9);
+}
+ 
+input:focus:valid,
+input:focus:valid{
+    background: rgb(220,255,220);
+}
+ 
+input:focus:invalid,
+input:focus:invalid{
+    background: rgb(255,230,238);
+}
+
+@media screen and (max-width: 1024px) {
+    /* Adjust styles for smaller screens */
+    .terms-box {
+        max-width: 90%; /* Use a percentage for flexibility */
+    }
+}
+
+.footer .container .row{
+    padding: 3%;
+    margin-bottom: calc(1% + 20px);
+}
+
+section{
+    position: relative;
+    left: calc(15% + 100px);
+    right: 20%;
+}
+
+header{
+    position: absolute;
+}
